@@ -4,7 +4,7 @@ export const MovieView = ({ movie, onBackClick }) => {
     return (
       <div>
         <div>
-          <img src={movie.image} />
+          <img src={movie.image} crossOrigin="annoymous"/>
         </div>
         <div>
           <span>Title: </span>
@@ -30,12 +30,12 @@ export const MovieView = ({ movie, onBackClick }) => {
   MovieView.propTypes = {
     movie: PropTypes.shape({
         title: PropTypes.string.isRequired,
-        description: PropTypes.string,
+        description: PropTypes.string.isRequired,
         director: PropTypes.shape({
-            Name: PropTypes.object.isRequired
+            name: PropTypes.string.isRequired
         }),
         genre: PropTypes.shape({
-            Name: PropTypes.object.isRequired
+            name: PropTypes.string.isRequired
         }),
         image: PropTypes.string.isRequired,
         featured: PropTypes.bool,

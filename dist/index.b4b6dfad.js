@@ -27318,7 +27318,7 @@ const MainView = ()=>{
                 return {
                     id: movie._id,
                     title: movie.Title,
-                    decription: movie.Description,
+                    description: movie.Description,
                     director: movie.Director.Name,
                     genre: movie.Genre.Name,
                     image: movie.ImagePath,
@@ -28206,7 +28206,8 @@ const MovieView = ({ movie, onBackClick })=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: movie.image
+                    src: movie.image,
+                    crossOrigin: "annoymous"
                 }, void 0, false, {
                     fileName: "src/components/movie-view/movie-view.jsx",
                     lineNumber: 7,
@@ -28324,12 +28325,12 @@ _c = MovieView;
 MovieView.propTypes = {
     movie: (0, _propTypesDefault.default).shape({
         title: (0, _propTypesDefault.default).string.isRequired,
-        description: (0, _propTypesDefault.default).string,
+        description: (0, _propTypesDefault.default).string.isRequired,
         director: (0, _propTypesDefault.default).shape({
-            Name: (0, _propTypesDefault.default).object.isRequired
+            name: (0, _propTypesDefault.default).string.isRequired
         }),
         genre: (0, _propTypesDefault.default).shape({
-            Name: (0, _propTypesDefault.default).object.isRequired
+            name: (0, _propTypesDefault.default).string.isRequired
         }),
         image: (0, _propTypesDefault.default).string.isRequired,
         featured: (0, _propTypesDefault.default).bool

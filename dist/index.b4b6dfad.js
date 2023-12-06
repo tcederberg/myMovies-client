@@ -27686,6 +27686,7 @@ var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 var _reactBootstrap = require("react-bootstrap");
 var _reactRouterDom = require("react-router-dom");
 var _reactBootstrapIcons = require("react-bootstrap-icons");
+var _movieCardScss = require("./movie-card.scss");
 const MovieCard = ({ movie, addFav, removeFav, isFavorite })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card), {
         className: "h-100",
@@ -27698,7 +27699,7 @@ const MovieCard = ({ movie, addFav, removeFav, isFavorite })=>{
                         src: movie.image
                     }, void 0, false, {
                         fileName: "src/components/movie-card/movie-card.jsx",
-                        lineNumber: 11,
+                        lineNumber: 12,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27709,7 +27710,7 @@ const MovieCard = ({ movie, addFav, removeFav, isFavorite })=>{
                             onClick: ()=>removeFav(movie.id)
                         }, void 0, false, {
                             fileName: "src/components/movie-card/movie-card.jsx",
-                            lineNumber: 14,
+                            lineNumber: 15,
                             columnNumber: 17
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrapIcons.BookmarkHeart), {
                             size: 30,
@@ -27718,18 +27719,18 @@ const MovieCard = ({ movie, addFav, removeFav, isFavorite })=>{
                             onClick: ()=>addFav(movie.id)
                         }, void 0, false, {
                             fileName: "src/components/movie-card/movie-card.jsx",
-                            lineNumber: 16,
+                            lineNumber: 17,
                             columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/movie-card/movie-card.jsx",
-                        lineNumber: 12,
+                        lineNumber: 13,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/movie-card/movie-card.jsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Body, {
@@ -27738,41 +27739,41 @@ const MovieCard = ({ movie, addFav, removeFav, isFavorite })=>{
                         children: movie.title
                     }, void 0, false, {
                         fileName: "src/components/movie-card/movie-card.jsx",
-                        lineNumber: 21,
+                        lineNumber: 22,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
                         children: movie.director
                     }, void 0, false, {
                         fileName: "src/components/movie-card/movie-card.jsx",
-                        lineNumber: 22,
+                        lineNumber: 23,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: `/movies/${encodeURIComponent(movie.id)}`,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
                             variant: "link",
-                            children: "Open"
+                            children: "More Info"
                         }, void 0, false, {
                             fileName: "src/components/movie-card/movie-card.jsx",
-                            lineNumber: 24,
+                            lineNumber: 25,
                             columnNumber: 15
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/movie-card/movie-card.jsx",
-                        lineNumber: 23,
+                        lineNumber: 24,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/movie-card/movie-card.jsx",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/movie-card/movie-card.jsx",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 7
     }, undefined);
 };
@@ -27792,7 +27793,7 @@ $RefreshReg$(_c, "MovieCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"7WDZU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fU9mO","prop-types":"7wKI2","react-bootstrap":"3AD9A","react":"21dqq","react-router-dom":"9xmpe","react-bootstrap-icons":"c9Gza"}],"7wKI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"7WDZU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fU9mO","prop-types":"7wKI2","react-bootstrap":"3AD9A","react":"21dqq","react-router-dom":"9xmpe","react-bootstrap-icons":"c9Gza","./movie-card.scss":"d6HH4"}],"7wKI2":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -47151,7 +47152,7 @@ BookmarkHeart.defaultProps = {
 };
 exports.default = BookmarkHeart;
 
-},{"react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"7WDZU"}],"ggaUx":[function(require,module,exports) {
+},{"react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"7WDZU"}],"d6HH4":[function() {},{}],"ggaUx":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e9f6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -47640,7 +47641,7 @@ var _reactBootstrap = require("react-bootstrap");
 var _reactRouterDom = require("react-router-dom");
 const NavigationBar = ({ user, onLoggedOut })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Navbar), {
-        bg: "light",
+        className: "navbar",
         expand: "lg",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Container), {
             children: [

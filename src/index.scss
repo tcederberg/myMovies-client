@@ -1,9 +1,13 @@
-$primary: SeaGreen;
-$body-bg: Honeydew;
+$primary: Teal;
+$body-bg: Lavender;
 
 @import '~bootstrap/scss/bootstrap.scss';
 
-
+.navbar {
+  background-color: $primary;
+  border-radius: 0px 0px 1em 1em;
+  margin-bottom: 2em;
+}
 
 //$color: steelblue;
 

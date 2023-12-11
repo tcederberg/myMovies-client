@@ -2,6 +2,7 @@ $primary: Teal;
 $body-bg: Lavender;
 
 @import '~bootstrap/scss/bootstrap.scss';
+//@import "node_modules/bootstrap/scss/bootstrap";
 
 .navbar {
   background-color: $primary;
